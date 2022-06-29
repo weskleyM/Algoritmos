@@ -1,2 +1,2 @@
 # Lições de Algoritmos
-## Estudos
+## Estudos Práticos
