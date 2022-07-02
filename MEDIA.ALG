@@ -1,23 +1,24 @@
-Algoritmo "Media"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 28/6/2022
-Var
-// Seção de Declarações das variáveis 
-   n1, n2, s: inteiro
-   m: real
+algoritmo "Media"
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-   escreva("Digite N1: ")
-   leia(n1)
-   escreva("Digite N2: ")
-   leia(n2)
-   s <- n1 + n2
-   m <- s / 2
-   escreval("Soma:",s)
-   escreva("Média:",m)
+var
+   n1, n2: inteiro
+   m:      real
 
-Fimalgoritmo
+inicio
+      Escreva("Digite N1:")
+      Leia(n1)
+      Escreva("Digite N2:")
+      Leia(n2)
+      m <- (n1+n2)/2
+      Escreval("Media:", m)
+      Se (m>=7) Entao
+         Escreva("Aprovado!")
+      Senao
+           Se (m>=5) e (m<7) Entao
+              Escreva("Recuperação!")
+           Senao
+                Escreva("Reprovado!")
+           FimSe
+      FimSe
+
+fimalgoritmo
