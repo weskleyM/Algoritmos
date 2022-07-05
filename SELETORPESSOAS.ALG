@@ -3,6 +3,13 @@ algoritmo "SeletorPessoas"
 var
    idade, cor, p, l, r, m, f, i: inteiro
    sexo, res:  caractere
+procedimento Topo()
+inicio
+   Escreval("====================")
+   Escreval(" Seletor de Pessoas")
+   Escreval("====================")
+   Escreval("")
+fimprocedimento
 
 inicio
       p <- 0
@@ -12,11 +19,8 @@ inicio
       f <- 0
       i <- 0
       Repita
-            Escreval("====================")
-            Escreval(" Seletor de Pessoas")
-            Escreval("====================")
+            Topo()
             Repita
-              Escreval("")
               Escreva("Sexo[F/M]:")
               Leia(sexo)
               Se (sexo = "f") Entao
@@ -26,7 +30,9 @@ inicio
                      m <- m + 1
                    Senao
                         LimpaTela
+                        Topo()
                         Escreval("** Opcao Invalida! **")
+                        Escreval("")
                    FimSe
               FimSe
             Ate (sexo = "f") ou (sexo = "m")
@@ -53,6 +59,7 @@ inicio
                          r <- r + 1
                      OutroCaso
                          LimpaTela
+                         Topo()
                          Escreval("** Opcao Invalida! **")
             FimEscolha
             Ate (cor > 0) e (cor < 4)

@@ -1,19 +1,26 @@
 algoritmo "Fibonacci"
-
 var
-   ant, suc, aux, i: inteiro
+   a, b, c: inteiro
+
+procedimento fibonacci(var x, y: inteiro)
+var
+   c: inteiro
 
 inicio
-      ant <- 0
-      suc <- 1
-      Escreva(ant)
-      Escreva(suc)
-      Para i <- 3 ate 15 faca
-          aux <- ant + suc
-          ant <- suc
-          suc <- aux
-          Escreva(suc)
-      FimPara
-      
+      c <- x + y
+      x <- y
+      y <- c
+      escreva(c)
+
+fimprocedimento
+
+inicio
+      a <- 0
+      b <- 1
+      escreva(a)
+      escreva(b)
+      para c <- 3 ate 15 faca
+          fibonacci(a, b)
+      fimpara
 
 fimalgoritmo
